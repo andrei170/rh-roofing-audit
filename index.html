@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R &amp; H Roofing Services — Digital Presence &amp; Paid Readiness Audit</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence &amp; Paid Readiness Audit</div>
+    <h1>R &amp; H Roofing Services Ltd</h1>
+    <div class="sub">Prepared for Michael Ridd &middot; randhroofing.co.uk &middot; Company 08370667 &middot; Exeter, Devon &middot; 24 August 2026</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="gradecard gc-F">
+      <div class="bigletter bl-F">F</div>
+      <div class="score100">29 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>Nobody on a phone can ring you without typing your number in by hand.</h2>
+      <p>There is <b>not one tap-to-call link anywhere on your website.</b> Both numbers &mdash; 01392
+      841167 and 07703 989767 &mdash; sit on the page as plain text. On a mobile, where most roofing
+      searches happen, a customer has to memorise it, switch app and type it. A good share of them
+      simply do not.</p>
+      <span class="tag">25+ years &middot; trading since 2009 &middot; 10-year labour guarantee</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">Three Findings</div>
+
+    <div class="flag">
+      <div class="lab">One &mdash; no tap-to-call, and no form on the page people land on</div>
+      <div class="code">
+randhroofing.co.uk &middot; served source &middot; 24 Aug 2026
+homepage    tel: links <span class="ph">0</span>   &lt;form&gt; tags <span class="ph">0</span>   inputs <span class="ph">0</span>
+feedback    tel: links <span class="ph">0</span>   &lt;form&gt; tags <span class="ph">0</span>   inputs <span class="ph">0</span>
+contact     tel: links <span class="ph">0</span>   &lt;form&gt; tags <span class="ok">1</span>   inputs <span class="ok">8</span>
+      </div>
+      <p>The contact page has a real eight-field form, which is fine. <b>The homepage has no form and
+      no clickable number at all.</b> The only route in from the front page is a mailto: link.</p>
+      <p>Adding <code>tel:</code> links is a ten-minute job on WordPress and it is the single
+      highest-return change on this list.</p>
+    </div>
+
+    <div class="flag">
+      <div class="lab">Two &mdash; your newest customer review is eight years old</div>
+      <div class="code">
+Feedback page &mdash; 12 testimonials, all dated:
+<span class="ok">2017</span> &times; 6      <span class="ok">2018</span> &times; 6
+newest: <span class="ph">15th August 2018</span>
+2019 &ndash; 2026: <span class="ph">nothing</span>
+      </div>
+      <p>They are genuine, named and specific &mdash; lead valleys, chimney repair, a loft condensation
+      problem, new downpipes and guttering. That is exactly the right kind of proof.</p>
+      <p><b>But a visitor reads a wall of 2017 and 2018 dates and concludes the business peaked eight
+      years ago.</b> The page even carries the heading "Please leave us feedback" &mdash; with no form
+      under it to leave any. Nobody can, so nobody has.</p>
+    </div>
+
+    <div class="flag">
+      <div class="lab">Three &mdash; nothing on the site is measured, and nothing is ad-ready</div>
+      <div class="code">
+Google Analytics / GA4    <span class="ph">&#10007; none</span>
+Google Tag Manager        <span class="ph">&#10007; none</span>
+Google Ads tag            <span class="ph">&#10007; none</span>
+Meta pixel                <span class="ph">&#10007; none</span>
+Structured data / schema  <span class="ph">&#10007; none</span>
+      </div>
+      <p>If you spent money on advertising tomorrow, <b>not one click could be traced to a job.</b> You
+      would be trusting whoever ran it, because there would be no independent way to check. That is how
+      most roofers end up believing advertising does not work &mdash; they cannot see whether it did.</p>
+      <p>No Meta pixel also means <b>no retargeting audience exists.</b> Every person who has visited
+      your site and not called is gone for good. Installing the pixel costs nothing and starts building
+      that list from today, whether or not you ever advertise.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What You Have That Most Devon Roofers Do Not</div>
+    <div class="win">
+      <div class="lab">Genuinely strong, and barely used</div>
+      <ul>
+        <li><b>A minimum ten-year labour guarantee</b>, plus manufacturer's warranty on materials. Most
+        roofers say "guaranteed" and never state a term. Ten years is a specific, checkable promise and
+        it should be the biggest thing on the homepage.</li>
+        <li><b>Twenty-five years of experience</b> and the business running since 2009.</li>
+        <li><b>Real technical range</b> &mdash; slate and tile, Velux, gutters and fascias, flat roofs
+        including Single Ply Armourplan, EPDM and liquid plastic. That is specific enough to sound like
+        a roofer rather than a marketing page.</li>
+        <li><b>Twelve genuine named testimonials.</b> The asset exists; it just stopped in 2018.</li>
+        <li><b>info@randhroofing.co.uk on your own domain</b>, and the site is on HTTPS.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Scorecard &mdash; 12 Categories</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Guarantee</div><div class="sc">Minimum ten-year labour guarantee plus manufacturer's warranty. Specific, checkable, and stronger than most of the field.</div><div class="bar"><div class="fill gB" style="width:80%"></div></div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Brand basics</div><div class="sc">Own domain, matching info@ email, HTTPS throughout. Correct.</div><div class="bar"><div class="fill gC" style="width:60%"></div></div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Testimonials</div><div class="sc">Twelve real, named, specific reviews. Every one dated 2017 or 2018.</div><div class="bar"><div class="fill gC" style="width:50%"></div></div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Service depth</div><div class="sc">Slate, tile, Velux, gutters, fascias, Single Ply Armourplan, EPDM, liquid plastic. Specific and credible.</div><div class="bar"><div class="fill gC" style="width:50%"></div></div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Enquiry capture</div><div class="sc">Eight-field form, but only on the contact page and with no job type, roof type or urgency to price from.</div><div class="bar"><div class="fill gD" style="width:40%"></div></div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Local search</div><div class="sc">Exeter and "anywhere in Devon" stated. No town pages, so one page carries the whole county.</div><div class="bar"><div class="fill gD" style="width:30%"></div></div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Proof recency</div><div class="sc">Newest review 15th August 2018. Eight years of completed roofs with nothing added.</div><div class="bar"><div class="fill gF" style="width:20%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Homepage lead capture</div><div class="sc">No form and no clickable number on the page most visitors land on. A mailto: link is the only route.</div><div class="bar"><div class="fill gF" style="width:10%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Paid readiness</div><div class="sc">No pixel, no conversion tag, no landing page. Advertising tomorrow would be entirely unmeasurable.</div><div class="bar"><div class="fill gF" style="width:10%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Tap-to-call</div><div class="sc">Zero tel: links across the homepage, feedback page and contact page. Both numbers are plain text only.</div><div class="bar"><div class="fill gF" style="width:2%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Measurement</div><div class="sc">No GA4, no Tag Manager, no Ads tag, no Meta pixel. Nothing is measured at all.</div><div class="bar"><div class="fill gF" style="width:2%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">No LocalBusiness, RoofingContractor or Organization schema anywhere. Nothing telling Google what you are.</div><div class="bar"><div class="fill gF" style="width:2%"></div></div></div><div class="badge gF">F</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity in Numbers</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">Two more jobs a month</div><div class="big">&pound;48,000</div><div class="small">per year at a &pound;2,000 average</div></div>
+      <div class="ocard"><div class="lab">Four more a month</div><div class="big">&pound;96,000</div><div class="small">per year</div></div>
+      <div class="ocard"><div class="lab">Six more a month</div><div class="big">&pound;144,000</div><div class="small">per year</div></div>
+    </div>
+    <p class="oppnote">&pound;2,000 is a blended figure across repairs, Velux installs, guttering and
+    full re-roofs across Devon &mdash; your real average is worth telling us. <b>The important part is
+    that none of this needs new enquiries.</b> People are already finding the site and failing to
+    contact you from it, because on a phone there is nothing to tap. That is the cheapest lead source
+    in this document and it is currently switched off.</p>
+  </section>
+
+  <section>
+    <div class="h">Estimated Size of the Business</div>
+    <div class="warn">
+      <div class="lab">From public record</div>
+      <p><b>Turnover roughly &pound;150,000 to &pound;400,000. Owner earnings roughly &pound;60,000 to
+      &pound;130,000.</b></p>
+      <p>R &amp; H Roofing Services Limited (08370667), with Michael Ridd as director. The business
+      started in 2009 and incorporated later; the site describes a small team working domestic roofing
+      across Devon, quoting anything from a single slate to a full re-roof. A small owner-led roofing
+      firm working the Exeter area at a &pound;2,000 blended job value lands in that band, and
+      owner-operated firms with minimal payroll typically retain a high share of turnover as combined
+      earnings.</p>
+      <p>An estimate from public data and trade shape, not from your accounts &mdash; small-company
+      filings do not disclose turnover.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div><div class="pill from-F">F</div><div class="pilllab">Today &middot; 29</div></div>
+      <div class="ar">&rarr;</div>
+      <div><div class="pill to">A&minus;</div><div class="pilllab">After &middot; 86</div></div>
+    </div>
+    <p class="oppnote" style="text-align:center">A ten-year guarantee, twenty-five years of experience
+    and twelve real reviews. Almost all of this is putting what you already have where people can act
+    on it.</p>
+  </section>
+
+  <section>
+    <div class="h">Priority Roadmap &mdash; Fix First (All Free)</div>
+    <ul class="road">
+      <li><b>Make both numbers tap-to-call</b> on every page. Ten minutes, and it is the biggest single thing costing you calls</li>
+      <li><b>Put the ten-year guarantee at the top of the homepage.</b> It is your strongest sentence and it is buried</li>
+      <li><b>Ask your last twenty customers for a Google review.</b> Eight years of jobs, nobody asked</li>
+      <li><b>Put a form on the homepage</b>, not only on the contact page</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next &mdash; Compounding Growth</div>
+    <ul class="road road2">
+      <li><b>Install analytics and the Meta pixel now</b> &mdash; before any spend, so a retargeting audience starts building from today</li>
+      <li><b>Rebuild the form to qualify:</b> roof type, job type, property, postcode, urgency</li>
+      <li><b>Add LocalBusiness / RoofingContractor schema</b> so Google knows what you are and where</li>
+      <li><b>Town pages</b> for Exeter, Exmouth, Newton Abbot, Tiverton, Honiton and Crediton instead of "anywhere in Devon"</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>Twenty-five years, a ten-year guarantee, and a phone number nobody can tap.</h2>
+    <p>The work is not the problem and the reviews prove it. The problem is that the website makes
+    contacting you harder than it needs to be.</p>
+  </div>
+
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 24 August 2026<br>
+  For Michael Ridd of R &amp; H Roofing Services Ltd (company 08370667), Exeter, Devon. Findings taken
+  directly from randhroofing.co.uk and its served page source on that date. The absence of tel: links,
+  form tags, tracking scripts and structured data was established by searching the served source of the
+  homepage, feedback page and contact page; anything loaded client-side after render or server-side
+  would not appear in this check. Testimonial dates and wording are as published on your own feedback
+  page. Experience, trading history and guarantee terms are as stated on your own site. Revenue figures
+  are estimates from public data and trade benchmarks, not statements of account and not a guarantee.
+</footer>
+</body></html>
